@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata-dotnet-core-start.Lib", "kata-dotnet-core-start.Lib\kata-dotnet-core-start.Lib.csproj", "{7DEFB038-5A79-4068-879F-47CDBFF62E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata-dotnet-core-start.Lib.Tests", "kata-dotnet-core-start.Lib.Tests\kata-dotnet-core-start.Lib.Tests.csproj", "{68976BA5-CAAB-4670-8A7A-4A0D59D740FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kata-dotnet-core-start.App", "kata-dotnet-core-start.App\kata-dotnet-core-start.App.csproj", "{55573388-EB3B-4D30-97DB-45B18CE094CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DEFB038-5A79-4068-879F-47CDBFF62E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEFB038-5A79-4068-879F-47CDBFF62E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEFB038-5A79-4068-879F-47CDBFF62E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEFB038-5A79-4068-879F-47CDBFF62E56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68976BA5-CAAB-4670-8A7A-4A0D59D740FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68976BA5-CAAB-4670-8A7A-4A0D59D740FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68976BA5-CAAB-4670-8A7A-4A0D59D740FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68976BA5-CAAB-4670-8A7A-4A0D59D740FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55573388-EB3B-4D30-97DB-45B18CE094CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55573388-EB3B-4D30-97DB-45B18CE094CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55573388-EB3B-4D30-97DB-45B18CE094CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55573388-EB3B-4D30-97DB-45B18CE094CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

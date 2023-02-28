@@ -26,12 +26,42 @@ public class UnitTest1
     }
     
     [Fact]
-    public void when_All_Position_Is_Filled_Then_Game_Over()
+    public void When_All_Position_Is_Filled_Then_Game_Over()
     {
         // act
         for (int i = 0; i < 9; i++)
         {
             TicTacToe.board.Add(i+1,'X');
+        }
+        // assert
+        Assert.Equal(TicTacToe.GameOver(),true);
+    }
+    
+    [Theory]
+    [InlineData(1,4)]
+    [InlineData(4,7)]
+    [InlineData(7,10)]
+    public void When_All_Position_Of_GivenRow_Is_Filled_With_Same_Value_Then_Game_Over(int startPos, int length)
+    {
+        // act
+        for (int i = startPos; i < length; i++)
+        {
+            TicTacToe.board.Add(i,'X');
+        }
+        // assert
+        Assert.Equal(TicTacToe.GameOver(),true);
+    }
+    
+    [Theory]
+    [InlineData(1,8)]
+    [InlineData(2,9)]
+    [InlineData(3,10)]
+    public void When_All_Position_Of_GivenColumn_Is_Filled_With_Same_Value_Then_Game_Over(int startPos, int length)
+    {
+        // act
+        for (int i = startPos; i < length; i = i + 3)
+        {
+            TicTacToe.board.Add(i,'X');
         }
         // assert
         Assert.Equal(TicTacToe.GameOver(),true);

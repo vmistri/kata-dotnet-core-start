@@ -12,6 +12,14 @@ public class TicTacToe
     {
         if (board.Count == 9)
             return true;
+        else if (board.ContainsKey(1) && board.ContainsKey(2) && board.ContainsKey(3))
+            return true;
+        else if (board.ContainsKey(4) && board.ContainsKey(5) && board.ContainsKey(6))
+            return true;
+        else if (board.ContainsKey(7) && board.ContainsKey(8) && board.ContainsKey(9))
+            return true;
+        
+        
         return false;
     }
 }

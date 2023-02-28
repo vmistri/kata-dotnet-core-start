@@ -25,6 +25,22 @@ public class UnitTest1
         Assert.Equal(checkInput,false);
     }
     
+    [Fact]
+    public void when_All_Position_Is_Filled_Then_Game_Over()
+    {
+        // act
+        for (int i = 0; i < 9; i++)
+        {
+            TicTacToe.board.Add(i+1,'X');
+        }
+        // assert
+        Assert.Equal(TicTacToe.GameOver(),true);
+    }
+    
+    
+    
+    
+    
     
     
 }

@@ -42,6 +42,16 @@ public class TicTacToe
             if (ReturnValue(3) == ReturnValue(6) && ReturnValue(6) == ReturnValue(9))
                 return true;
         }
+        else if (board.ContainsKey(1) && board.ContainsKey(5) && board.ContainsKey(9))
+        {
+            if (ReturnValue(1) == ReturnValue(5) && ReturnValue(5) == ReturnValue(9))
+                return true;
+        }
+        else if (board.ContainsKey(3) && board.ContainsKey(5) && board.ContainsKey(7))
+        {
+            if (ReturnValue(3) == ReturnValue(5) && ReturnValue(5) == ReturnValue(7))
+                return true;
+        }
         return false;
 
         char ReturnValue(int key)

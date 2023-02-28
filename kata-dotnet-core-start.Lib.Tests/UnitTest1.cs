@@ -66,4 +66,17 @@ public class UnitTest1
         // assert
         Assert.Equal(TicTacToe.GameOver(),true);
     }
+    [Theory]
+    [InlineData(1,10,4)]
+    [InlineData(3,8,2)]
+    public void When_All_Position_Of_Given_Diagonal_Is_Filled_With_Same_Value_Then_Game_Over(int startPos, int length, int addValue)
+    {
+        // act
+        for (int i = startPos; i < length; i = i + addValue)
+        {
+            TicTacToe.board.Add(i,'X');
+        }
+        // assert
+        Assert.Equal(TicTacToe.GameOver(),true);
+    }
 }
